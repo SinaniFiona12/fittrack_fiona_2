@@ -1,15 +1,5 @@
-let activity = 'Cycling';
+let activities = ['Cycling', 'Running', 'Weights', 'Yoga'];
 
-localStorage.setItem('activity', activity);
 
-let savedActivity =
-localStorage.getItem('activity');
+localStorage.setItem('activities', JSON.stringify(activities));
 
-if (savedActivity) {
-    console.log(savedActivity);
-} else {
-    console.log('geen activiteit gevonden');
-}
-
-let newActivity = 'Running';
-localStorage.setItem('activity', newActivity);
