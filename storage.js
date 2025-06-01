@@ -40,6 +40,17 @@ function logYoga() {
     yoga.style.border = "2px solid black"; 
     localStorage.setItem('activity', activity[3]);  
 }
+const saveButton = document.querySelector(".button");
 
+saveButton.addEventListener("click", function () {
+    const selectedActivity = localStorage.getItem("activity");
+
+    if (selectedActivity) {
+        
+        window.location.href = "index.html";
+    } else {
+        alert("Please select an activity before saving!");
+    }
+});
 
 
