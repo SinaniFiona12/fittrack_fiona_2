@@ -204,6 +204,16 @@
         <a href="./fittrack.html">+</a>
     </div>
 
-   
+   <script>
+    const savedActivity = locolStorage.getItem('activity');
+
+    const achievementDiv = document.getElementById('achievement');
+
+    if (savedActivity) {
+        achievementDiv.querySelector("p").textContent += " " + savedActivity;
+        
+    }
+   </script>
+
 </body>
 </html>
