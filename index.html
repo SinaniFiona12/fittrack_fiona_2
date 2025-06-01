@@ -207,6 +207,7 @@
   
 
     <script>
+       
 
         const savedActivity = localStorage.getItem('activity');
         const achievementDiv = document.getElementById('achievement');
@@ -214,6 +215,9 @@
         if (savedActivity) {
             achievementDiv.querySelector("p").textContent += " " + savedActivity;
         }
+
+        localStorage.removeItem('activity');
+        
     </script>
      
 
